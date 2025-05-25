@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <a href="">
+                <img class="log" src="img/logo.png" alt="" class="logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#historia-section">Historia</a></li>
+            <li><a href="#discografia-section">Discografia</a></li>
+            <li><a href="#frases-section">Principais frases</a></li>
+            <li><a href="nossaPlay.html">Nossa play</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="hero-section"> 
+                <div class="historia"  id="historia-section">
+            <div class="img_his">
+                <img src="img/images.jpg" alt="" srcset="">
+            </div>
+            <div class="text">
+                <p>Charlie Brown Jr. foi uma banda icônica de rock brasileira dos anos 90, de Santos. Liderada por
+                    Chorão, sua sonoridade única misturava hardcore melódico, skate punk, reggae e rap.</p>
+                <p>Suas letras retratavam o cotidiano, amizade e críticas sociais, com forte ligação à cultura do skate,
+                    conquistando muitos fãs. Com shows cheios de energia e grande autenticidade, sucessos como "Zóio de
+                    Lula" e "Lugar ao Sol" viraram hinos.</p>
+                <p> “Agora eu sei exatamente o que fazer, vou recomeçar, poder contar com você.” - Só os loucos sabem
+                </p>
+                <p>“Você é dona do meu pensamento, do meu coração.” - Dona do meu pensamento</p>
+            </div>
+
+        </div>
+        <div class="music" id="player-musica">
+            <p>Clique no botão abaixo pra começar a tocar a sua música</p>
+            <audio id="backgroundMusic" loop>
+                <source src="cbjr.mp3" type="audio/mpeg">
+                Seu navegador não suporta a reprodução de áudio.
+            </audio>
+            <button id="playPauseButton">Tocar Música</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+        </div>
+
+        <h1 class="disco" id="discografia-section"> <i class="bi bi-music-note-beamed"></i> Discografia - As Principais</h1>
+        <div class="cards">
+
+            <div class="card" style="width: 18rem;"><!--CARD 1-->
+                <img src="/img/album1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Marcou o retorno de Thiago Castanho e uma sonoridade mais pesada. Apresenta
+                        sucessos como "Lugar ao Sol" e "Ela Vai Voltar", consolidando a energia autêntica da banda</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;"><!--CARD 2-->
+                <img src="/img/album2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Este álbum celebra a paixão por futebol e a vida, com letras positivas. Traz a
+                        essência do CBJr. em faixas como a título e "Só Existe o Agora".</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;"><!--CARD 3-->
+                <img src="/img/album3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Um grande sucesso de público e crítica, este álbum reinventou clássicos em
+                        formato acústico. Revelou a profundidade das composições, incluindo a inédita "Vícios e
+                        Virtudes"</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;"><!--CARD 4-->
+                <img src="/img/album4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Um disco com sonoridade mais pesada e direta, que reflete a atitude do grupo.
+                        Destacam-se "Papo Reto (Prazer é o Poder)" e "Champanhe e Água Benta".</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;"><!--CARD 5-->
+                <img src="/img/album5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Álbum crucial que consolidou a banda no cenário nacional. Trouxe clássicos como
+                        "Zóio de Lula", "Não Deixe o Mar Te Engolir" e "Te Levar".</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="disco"> <i class="bi bi-music-note-beamed"></i> Frases </h1>
+        <div class="frases"  id="frases-section">
+            <div class="frase">
+                <p>"DONA DO MEU PENSAMENTO, SÓ VOCÊ ME FAZ SONHAR" - Dona do meu pensamento</p>
+            </div>
+
+            <div class="frase">
+                <p>"MEU NOVO MUNDO, MEU VELHO MUNDO, MEU NOVO AMOR"</p>
+            </div>
+
+            <div class="frase">
+                <p>"SÓ OS LOUCOS SABEM" - Só os loucos sabem</p>
+            </div>
+
+            <div class="frase">
+                <p>"A VIDA ME ENSINOU A NUNCA DESISTIR, NEM GANHAR, NEM PERDER, MAS EVOLUIR" - Pontes Indestrutíveis</p>
+            </div>
+
+            <div class="frase">
+                <p>"UM MINUTO, UM SEGUNDO, UMA ETERNIDADE. PRA MIM É POUCO SE FOR DO SEU LADO" - Vem ser minha</p>
+            </div>
+
+            <div class="frase">
+                <p>"UM ANJO DO CÉU QUE TROUXE PRA MIM É A MAIS BONITA, A JOIA PERFEITA" - Te levar</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
