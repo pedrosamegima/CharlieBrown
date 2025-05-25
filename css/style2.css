@@ -1,82 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url('../img/fundo_chalkboard_1920x1080.png');
+
+body {
+    background-image: url('/img/fundo_chalkboard_1920x1080.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 button {
-padding: 15px 30px;
-font-size: 1.4em;
-            cursor: pointer;
-            margin-top: 30px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        button:hover {
-            background-color: #555;
-            transform: translateY(-2px);
-        }
-        button:active {
-            background-color: #111;
-            transform: translateY(0);
-        }
-        #volumeSlider {
-            margin-top: 20px;
-            width: 250px;
-            -webkit-appearance: none; /* Remove default styling for webkit browsers */
-            appearance: none;
-            height: 8px;
-            border-radius: 5px;
-            background: #d3d3d3; /* Track background */
-            outline: none;
-            opacity: 0.7;
-            transition: opacity .2s;
-        }
-        #volumeSlider:hover {
-            opacity: 1;
-        }
-        /* Style for the thumb (the draggable part) */
-        #volumeSlider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #333;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        #volumeSlider::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #333;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
+    padding: 15px 30px;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #111;
+    transform: translateY(0);
+}
+
+#volumeSlider {
+    margin-top: 20px;
+    width: 250px;
+    -webkit-appearance: none;
+    /* Remove default styling for webkit browsers */
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    /* Track background */
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+#volumeSlider:hover {
+    opacity: 1;
+}
+
+/* Style for the thumb (the draggable part) */
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#volumeSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* Estilos para o container do player de música */
 .music {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     /* REMOVIDOS OU AJUSTADOS: */
-    /* background-color: #333; */ /* <--- REMOVA ESTA LINHA para tirar o fundo */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */ /* <--- REMOVA ESTA LINHA para tirar a sombra */
-    /* color: white; */ /* <--- Mude para uma cor de texto que contraste com seu novo fundo */
-    color: #333; /* Por exemplo, um cinza escuro para o texto */
-color: white;
+    /* background-color: #333; */
+    /* <--- REMOVA ESTA LINHA para tirar o fundo */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* <--- REMOVA ESTA LINHA para tirar a sombra */
+    /* color: white; */
+    /* <--- Mude para uma cor de texto que contraste com seu novo fundo */
+    color: #333;
+    /* Por exemplo, um cinza escuro para o texto */
+    color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 50px auto;
@@ -98,15 +114,19 @@ color: white;
     font-size: 1.2em;
     cursor: pointer;
     margin-top: 20px;
-    background-color: #f0f0f0; /* Fundo mais claro para o botão */
-    color: #333; /* Texto escuro para o botão */
-    border: 1px solid #ccc; /* Uma borda sutil para definir o botão */
+    background-color: #f0f0f0;
+    /* Fundo mais claro para o botão */
+    color: #333;
+    /* Texto escuro para o botão */
+    border: 1px solid #ccc;
+    /* Uma borda sutil para definir o botão */
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .music button:hover {
-    background-color: #e0e0e0; /* Um pouco mais escuro no hover */
+    background-color: #e0e0e0;
+    /* Um pouco mais escuro no hover */
     color: #000;
 }
 
@@ -118,7 +138,8 @@ color: white;
     appearance: none;
     height: 8px;
     border-radius: 5px;
-    background: #ccc; /* Cor da trilha do slider (mais clara) */
+    background: #ccc;
+    /* Cor da trilha do slider (mais clara) */
     outline: none;
     opacity: 0.8;
     transition: opacity .2s;
@@ -130,7 +151,8 @@ color: white;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #333; /* Cor do "pino" do slider (escura para contraste) */
+    background: #333;
+    /* Cor do "pino" do slider (escura para contraste) */
     cursor: pointer;
 }
 
@@ -141,19 +163,22 @@ color: white;
     background: #333;
     cursor: pointer;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    margin: 10px;
+    margin: 10px auto;
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
     gap: 10px;
-    width: 1520px; /* <--- ESTE É O VALOR FIXO PARA 4 CARDS DE 18REM + GAPS */
-   
+    width: auto;
+    /*remove o fixo*/
+
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -161,93 +186,124 @@ color: white;
     gap: 10px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 18rem;   
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(50% - 10px);
+    flex-basis: 280px;
+
 }
-.text{
+
+.text {
     display: flex;
     color: white;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     margin: 15px;
 }
-h1{
-  display: flex;
+
+h1 {
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-     color: white;
+    color: white;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
 }
-img{
-   height: auto;
+
+img {
+    height: auto;
 }
-.menu{
+
+.menu {
     display: flex;
     color: white;
     justify-content: space-between;
 }
-ul{
+
+ul {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
     color: white;
 }
-li{
+
+li {
     padding: 15px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     color: inherit;
 }
+
 .menu ul li a {
-    color: inherit; /* Faz o link herdar a cor do texto do pai (<li> ou <ul>) */
+    color: inherit;
+    /* Faz o link herdar a cor do texto do pai (<li> ou <ul>) */
     text-decoration: none;
 }
-.log{
-  width: 150px;
+
+.log {
+    width: 150px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     padding: 10px;
 }
+
 /* Seu CSS para as imagens dentro dos cards */
 .card-img-top {
     width: 100%;
-    height: 300px; /* Ajuste esta altura para o que melhor se encaixa com suas fotos */
+    height: 300px;
+    /* Ajuste esta altura para o que melhor se encaixa com suas fotos */
     object-fit: cover;
     display: block;
 }
 
 /* Opcional: Ajustes para o .card, se você não tem o width: 18rem; no CSS */
 .card {
-    width: 18rem; /* Defina a largura do card aqui, se você não tem inline no HTML */
+    width: 18rem;
+    /* Defina a largura do card aqui, se você não tem inline no HTML */
     /* ... outras propriedades do card ... */
 }
+
 /* Para telas médias (ex: tablets) */
 @media (max-width: 1200px) {
     .cards {
-        width: auto; /* Remove a largura fixa do .cards em telas menores */
+        width: auto;
+        /* Remove a largura fixa do .cards em telas menores */
     }
+
     .card {
-        flex-basis: calc( (100% / 3) - 10px ); /* 3 cards por linha em telas médias */
+        flex-basis: calc((100% / 3) - 10px);
+        /* 3 cards por linha em telas médias */
     }
 }
 
 /* Para telas menores (ex: celulares) */
 @media (max-width: 768px) {
     .card {
-        flex-basis: calc( (100% / 2) - 10px ); /* 2 cards por linha em celulares */
+        flex-basis: calc((100% / 2) - 10px);
+        /* 2 cards por linha em celulares */
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
 /* Para telas muito pequenas */
 @media (max-width: 480px) {
     .card {
-        flex-basis: 95%; /* 1 card por linha em telas muito pequenas */
-        max-width: 95%; /* Garante que não ultrapasse a largura */
+        flex-basis: 95%;
+        /* 1 card por linha em telas muito pequenas */
+        max-width: 95%;
+        /* Garante que não ultrapasse a largura */
     }
 }
