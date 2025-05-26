@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('/img/fundo_chalkboard_1920x1080.png');
+    background-image: url('../img/fundo_chalkboard_1920x1080.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
