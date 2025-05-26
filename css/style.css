@@ -55,20 +55,18 @@ li {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
 
 .img_his {
-    width: 100%;
+    flex: 1 1 300px; 
     max-width: 400px;
-    margin: 0 auto;
 }
 
 .img_his img {
-    display: block;
-    width: 100%;
+   width: 100%;
     height: auto;
-    margin: 0 auto;
+    display: block;
     border-radius: 10px;
 }
 
@@ -77,6 +75,7 @@ li {
     font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     padding: 15px;
+    flex: 2 1 300px;
 }
 
 .cards {
@@ -343,5 +342,11 @@ button:active {
 @media (max-width: 768px) {
     .img_his {
         max-width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .historia {
+        flex-direction: column; /* força um abaixo do outro */
+        align-items: center; /* centraliza */
     }
 }
