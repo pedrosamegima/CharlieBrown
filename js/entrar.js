@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
         const cinema = document.getElementById("cinema").value;
         const password = document.getElementById("password").value;
 
-        if(nome === "Dona do meu pensamento" && cinema === "03/05/2025" && password === "DonaEncreca"){
+        if(nome === "Dona do meu pensamento" && cinema === "03/05/2025" && password === "DonaEncrenca"){
             window.location.href = "nossaPlay.html";
         } else {
             alert("Você não tem permissão pra ir para a próxima página");
